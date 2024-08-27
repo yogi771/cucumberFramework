@@ -2,8 +2,7 @@ package stepDefinitations;
 
 import java.util.Properties;
 
-import org.apache.commons.lang.RandomStringUtils;
-import org.apache.log4j.Logger;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 
 
@@ -17,12 +16,13 @@ public class BaseClass {
 	public AddCustomerPage addCust;
 	public SearchCustomerPage searchCust;
 	
-	public static Logger logger;
+	
 	public Properties configPorp;
 	
 	//created ffor generating unique email id
 	public static String randomestString() {
 		String generatedString1 = RandomStringUtils.randomAlphabetic(5);
+		
 		return (generatedString1);
 	}
 	

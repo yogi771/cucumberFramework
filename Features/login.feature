@@ -1,5 +1,6 @@
 Feature: Login
 
+@sanity
 Scenario: Successful Login with Valid Credentials
 	Given user Launch Chrome browser
 	When user opens URL "https://admin-demo.nopcommerce.com/login"
@@ -10,7 +11,7 @@ Scenario: Successful Login with Valid Credentials
 	Then page Title should be "Your store. Login"
 	And close browser
 	
-
+@regression
 Scenario Outline: Login Data Driven	
 	Given user Launch Chrome browser
 	When user opens URL "https://admin-demo.nopcommerce.com/login"

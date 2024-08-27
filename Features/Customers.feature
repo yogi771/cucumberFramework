@@ -7,7 +7,7 @@ Feature: Customers
 	And click on Login
 	Then User can view Dashboad
 	
-@AddnewCustomer
+@sanity
 Scenario: Add new Customer
 	
 	When User click on customers Menu
@@ -20,7 +20,7 @@ Scenario: Add new Customer
 	And close browser
 	
 	
-@SearchCustomer
+@regression
 Scenario: Search Customer by EmailID
 	
 	When User click on customers Menu
@@ -31,7 +31,7 @@ Scenario: Search Customer by EmailID
 	And close browser
 	
 
-@SearchCustomerBy
+@regression
 Scenario: Search Customer by Name
 	
 	When User click on customers Menu

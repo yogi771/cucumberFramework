@@ -2,13 +2,14 @@ package stepDefinitations;
 
 
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
@@ -16,15 +17,19 @@ import pageObjects.SearchCustomerPage;
 
 public class Steps extends BaseClass {
 
+	@Before
+	public void setUp() {
+		
+
+		driver = new ChromeDriver();
+		
+	}
 	
 
 	@Given("user Launch Chrome browser")
 	public void user_Launch_Chrome_browser() {
 		
-		logger =  Logger.getLogger("letMeShop"); //Added logger
-		PropertyConfigurator.configure("Log4j.properties"); //Added logger
-		driver = new ChromeDriver();
-		logger.info("******** Launching URL********");
+	
 		lp = new LoginPage(driver);
     
 	}
@@ -32,14 +37,14 @@ public class Steps extends BaseClass {
 	@When("user opens URL {string}")
 	public void user_opens_URL(String url) {
 		
-		logger.info("******** opening URL********");
+		
 		driver.get(url);
 		driver.manage().window().maximize();
 	}
 
 	@When("user enters Email as {string} and Password as {string}")
 	public void user_enters_Email_as_and_Password_as(String UEmail, String UPassword) {
-		logger.info("******** credentials entered ********");
+	
 		lp.setEmail(UEmail);
 		lp.setPassword(UPassword);
 	}
@@ -55,14 +60,14 @@ public class Steps extends BaseClass {
 			driver.close();
 			Assert.assertTrue(false);
 		} else {
-			logger.info("******** login fail ********");
+			
 			Assert.assertEquals(title, driver.getTitle());
 		}
 	}
 
 	@When("user click on Log out Link")
 	public void user_click_on_Log_out_Link() {
-		logger.info("******** closing browser********");
+		
 		lp.clickLogout();
 	}
 	
