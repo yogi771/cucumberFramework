@@ -8,13 +8,14 @@ import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features= ".//Features/login.feature",
+		features= "@target/rerun.txt",
 		glue="stepDefinitations",
 		dryRun=false,
 		monochrome=true,
-		plugin= {"pretty","html: test-output","json:target/cucumber.json","rerun:target/rerun.txt"}
+		plugin= {"pretty","html: test-output","html:target/rerun-cucumber-reports.html"}
 		)
+		
 
-public class TestRun {	
-	
+public class RerunFailed {
+
 }
