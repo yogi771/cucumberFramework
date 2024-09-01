@@ -4,6 +4,8 @@ package stepDefinitations;
 
 
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,6 +16,8 @@ import io.cucumber.java.en.*;
 import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
 import pageObjects.SearchCustomerPage;
+import pageObjects.demowebshop;
+
 
 public class Steps extends BaseClass {
 
@@ -173,6 +177,38 @@ public class Steps extends BaseClass {
 	  
 	}
 
+	// steps for new website demoWebShop for execution
+	
+	@Given("user is on the home page of {string}")
+	public void user_is_on_the_home_page(String url) {
+		driver.get(url);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+	}
+
+	@When("user move cursor on computers dropdown")
+	public void user_move_cursor_on_computers_dropdown() {
+		demowebs = new demowebshop(driver);
+		demowebs.hoverOnComputers();
+	}
+
+	@When("user moves cursor on nootbook and click")
+	public void user_moves_cursor_on_nootbook_and_click() {
+	   //demowebs.clickNoteBook();
+	}
+
+	@Then("user is on nootbook page")
+	public void user_is_on_nootbook_page() {
+		demowebs.getPageTitle(driver);
+	}
+
+	@Then("user can see the size of nootbook")
+	public void user_can_see_the_size_of_nootbook() {
+	  String productName = demowebs.getProductName();
+	  System.out.println(productName);
+	   
+	}
 
 
 

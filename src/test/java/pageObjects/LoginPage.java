@@ -47,6 +47,7 @@ public class LoginPage {
 	public void setEmail(String UEmail) {
 		txtEmail.clear();
 		txtEmail.sendKeys(UEmail);
-
 	}
+	
+	
 }

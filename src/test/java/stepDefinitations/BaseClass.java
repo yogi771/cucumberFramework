@@ -9,12 +9,16 @@ import org.openqa.selenium.WebDriver;
 import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
 import pageObjects.SearchCustomerPage;
+import pageObjects.demowebshop;
+import utilities.ActionClass;
 
 public class BaseClass {
 	public WebDriver driver;
 	public LoginPage lp;
 	public AddCustomerPage addCust;
 	public SearchCustomerPage searchCust;
+	public demowebshop demowebs;
+	
 	
 	
 	public Properties configPorp;
