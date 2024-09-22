@@ -15,6 +15,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
+import pageObjects.Pagination;
 import pageObjects.SearchCustomerPage;
 import pageObjects.demowebshop;
 
@@ -210,6 +211,28 @@ public class Steps extends BaseClass {
 	   
 	}
 
+	// code for the demoWebShopPagination 
+	
+	@When("user navigate to footer")
+	public void user_navigate_to_footer() {
+		pagination = new Pagination(driver);
+		
+	}
+
+	@When("user moves cursor sitemap in information and click")
+	public void user_moves_cursor_sitemap_in_information_and_click() {
+		pagination.clickFooterOne();
+	}
+
+	@Then("user is on sitemap page")
+	public void user_is_on_sitemap_page() {
+	    pagination.checkTitle();
+	}
+
+	@Then("user can try pagination")
+	public void user_can_try_pagination() {
+	   pagination.moveBack();
+	}
 
 
 }

@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
+import pageObjects.Pagination;
 import pageObjects.SearchCustomerPage;
 import pageObjects.demowebshop;
 import utilities.ActionClass;
@@ -18,7 +19,7 @@ public class BaseClass {
 	public AddCustomerPage addCust;
 	public SearchCustomerPage searchCust;
 	public demowebshop demowebs;
-	
+	public Pagination pagination;
 	
 	
 	public Properties configPorp;
