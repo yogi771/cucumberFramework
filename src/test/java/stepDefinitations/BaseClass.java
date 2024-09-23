@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
 import pageObjects.Pagination;
+import pageObjects.RicePagination;
 import pageObjects.SearchCustomerPage;
 import pageObjects.demowebshop;
 import utilities.ActionClass;
@@ -20,7 +21,7 @@ public class BaseClass {
 	public SearchCustomerPage searchCust;
 	public demowebshop demowebs;
 	public Pagination pagination;
-	
+	public RicePagination RicePagi;
 	
 	public Properties configPorp;
 	

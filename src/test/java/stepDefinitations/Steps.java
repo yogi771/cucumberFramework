@@ -16,6 +16,7 @@ import io.cucumber.java.en.*;
 import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
 import pageObjects.Pagination;
+import pageObjects.RicePagination;
 import pageObjects.SearchCustomerPage;
 import pageObjects.demowebshop;
 
@@ -234,5 +235,18 @@ public class Steps extends BaseClass {
 	   pagination.moveBack();
 	}
 
+	// code for teseing pagination on rahul shetty website 
 
+	
+	@When("user search for {string} in the table using pagination")
+	public void user_search_for_in_the_table_using_pagination(String string) {
+		RicePagi = new RicePagination(driver); 
+	System.out.println(RicePagi.checkTable());
+	}
+
+	@Then("user verify the price is {int}")
+	public void user_verify_the_price_is(Integer int1) {
+	    
+	}
+	
 }
