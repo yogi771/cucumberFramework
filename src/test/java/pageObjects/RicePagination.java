@@ -19,7 +19,7 @@ public class RicePagination {
 		PageFactory.initElements(rdriver, this);
 		
 	}	
-	
+	//for list of webelements need to use @FindAll({ known number of elements}) and in this case need to create method 
 	@FindBy(xpath="//table[@class='table table-bordered']/tbody/tr/td[1]")
 	@CacheLookup
 	List<WebElement> lstProductNames;

@@ -249,4 +249,23 @@ public class Steps extends BaseClass {
 	    
 	}
 	
+	// code for the external url from the parent application using handle id
+	
+	
+	@When("user click on Instagram in Title of connect with us in footer")
+	public void user_click_on_instagram_in_title_of_connect_with_us_in_footer() {
+	   
+	}
+
+	@Then("user can see Instagram url gets launched in same tab")
+	public void user_can_see_instagram_url_gets_launched_in_same_tab() {
+	   
+	}
+
+	@Then("user navigate back to the parent page")
+	public void user_navigate_back_to_the_parent_page() {
+	    
+	}
+	
+	
 }
