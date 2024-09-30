@@ -14,7 +14,7 @@ public class ExternalLinks {
 	
 	public ExternalLinks(WebDriver rdriver) {
 		ldriver=rdriver;
-		ExternalLinks.initElements(rdriver, this);
+		//ExternalLinks.initElements(rdriver, this);
 	}
 	
 	@FindBy(linkText="Instagram")

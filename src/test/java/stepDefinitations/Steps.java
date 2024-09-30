@@ -238,7 +238,7 @@ public class Steps extends BaseClass {
 	// code for teseing pagination on rahul shetty website 
 
 	
-	@When("user search for {string} in the table using pagination")
+	@When("user search for {string}  in the table using pagination")
 	public void user_search_for_in_the_table_using_pagination(String string) {
 		RicePagi = new RicePagination(driver); 
 	System.out.println(RicePagi.checkTable());
