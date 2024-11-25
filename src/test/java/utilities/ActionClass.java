@@ -17,5 +17,6 @@ public class ActionClass {
 	public void toElement(WebElement element) {
 		action.moveToElement(element).click().perform();
 	}
+	//add more action class methods
 	
 }
