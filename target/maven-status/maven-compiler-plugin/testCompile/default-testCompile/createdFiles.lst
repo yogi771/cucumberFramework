@@ -1,0 +1,16 @@
+pageObjects\ExternalLinks.class
+com\Accenture\letMeShop\Login_Test.class
+stepDefinitations\BaseClass.class
+testRunner\RerunFailed.class
+pageObjects\demowebshop.class
+utilities\ExcelHandler.class
+pageObjects\Pagination.class
+com\Accenture\letMeShop\Register_Test.class
+pageObjects\RicePagination.class
+utilities\ActionClass.class
+pageObjects\LoginPage.class
+pageObjects\SearchCustomerPage.class
+testRunner\TestRun.class
+utilities\WaitHelper.class
+pageObjects\AddCustomerPage.class
+stepDefinitations\Steps.class

@@ -1,5 +1,5 @@
 Feature: Login
-
+#as admin login no longer compatible for automation, ther are no longer working
 @sanity
 Scenario: Successful Login with Valid Credentials
 	Given user Launch Chrome browser

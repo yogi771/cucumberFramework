@@ -1,4 +1,5 @@
-Feature: Customers
+Feature: Customers 
+#as the admin link is no longer automation compatible, feature01 no longer used
 
  	Background: below are the steps for each scenario
  	Given user Launch Chrome browser
