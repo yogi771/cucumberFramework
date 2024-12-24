@@ -26,7 +26,29 @@ public class ExternalLinks {
 		externalLink.click();
 	}
 	
+	@FindBy(linkText="Myntra")
+	@CacheLookup
+	WebElement myntraLink;
 	
+	public WebElement clickOnMyntra() {
+	return	myntraLink;
+	}
+	
+	@FindBy(linkText="Cleartrip")
+	@CacheLookup
+	WebElement clearTripLink;
+	
+	public WebElement clickOnClearTrip() {
+	return	clearTripLink;
+	}
+	
+	@FindBy(linkText="Shopsy")
+	@CacheLookup
+	WebElement ShopsyLink;
+	
+	public WebElement clickOnShopsy() {
+	return	ShopsyLink;
+	}
 	
 	
 	

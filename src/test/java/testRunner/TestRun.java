@@ -10,7 +10,7 @@ import io.cucumber.junit.Cucumber;
 @CucumberOptions(
 		features= ".//Features/SwitchWindows.feature",
 		glue="stepDefinitations",
-		dryRun=false,
+		dryRun=true,
 		monochrome=true,
 		plugin= {"pretty","html: test-output","json:target/cucumber.json","rerun:target/rerun.txt"}
 		)

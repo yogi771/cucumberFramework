@@ -19,4 +19,11 @@ public class ActionClass {
 	}
 	//add more action class methods
 	
+	public void scrollUPElement(WebElement element) {
+		action.scrollToElement(element).perform();
+	}
+	
+	public void scrollDownToFooter() {
+		action.scrollByAmount(0, 900).perform();
+	}
 }

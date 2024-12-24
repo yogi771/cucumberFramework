@@ -2,7 +2,8 @@ package stepDefinitations;
 
 
 
-
+import utilities.ActionClass;
+import utilities.SwitchToMethods;
 
 import java.util.concurrent.TimeUnit;
 
@@ -23,6 +24,9 @@ import pageObjects.demowebshop;
 
 public class Steps extends BaseClass {
 
+	ActionClass action = new ActionClass(driver);
+	SwitchToMethods switchMethods = new SwitchToMethods(driver);
+	
 	@Before
 	public void setUp() {
 		
@@ -254,12 +258,12 @@ public class Steps extends BaseClass {
 	
 	@When("user click on Instagram in Title of connect with us in footer")
 	public void user_click_on_instagram_in_title_of_connect_with_us_in_footer() {
-	   
+	   //TC updated and steps written below 
 	}
 
 	@Then("user can see Instagram url gets launched in same tab")
 	public void user_can_see_instagram_url_gets_launched_in_same_tab() {
-	   
+	   //TC updated and steps written below
 	}
 
 	@Then("user navigate back to the parent page")
@@ -267,5 +271,21 @@ public class Steps extends BaseClass {
 	    
 	}
 	
+	@When("user click on Myntra, ClearTrip and Shopsy in Title of connect with us in footer")
+	public void user_click_on_myntra_clear_trip_and_shopsy_in_title_of_connect_with_us_in_footer() {
+		action.scrollDownToFooter();
+		
+		externalLinks.clickOnShopsy().click();;
+		externalLinks.clickOnClearTrip().click();;
+		externalLinks.clickOnMyntra().click();;
+		
+		//switchMethods.switchToWindowByTitle(driver , "https://www.myntra.com/");
+	   
+	}
+	@Then("user can see Myntra url gets launched in same tab")
+	public void user_can_see_myntra_url_gets_launched_in_same_tab() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
 	
 }
