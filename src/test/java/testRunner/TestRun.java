@@ -8,7 +8,7 @@ import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features= ".//Features",
+		features= ".//Features/SwitchWindows.feature",
 		glue="stepDefinitations",
 		dryRun=false,
 		monochrome=true,
