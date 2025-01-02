@@ -1,4 +1,4 @@
-This Framework is for Automation Webapplication Testing | 
+ Automation Testing  | 
 TechStack: JAVA, Selenium, Cucumber, Junit
 
 steps to utilize this framework
