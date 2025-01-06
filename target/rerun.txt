@@ -1,1 +1,4 @@
+file:Features/demowebshop.feature:7
+file:Features/demoWebShopPagination.feature:6
 file:Features/SwitchWindows.feature:6
+file:Features/pageNext.feature:6

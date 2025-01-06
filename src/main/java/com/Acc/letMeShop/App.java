@@ -1,4 +1,4 @@
-package com.Accenture.letMeShop;
+package com.Acc.letMeShop;
 
 public class App {
   public static void main(String[] args) {

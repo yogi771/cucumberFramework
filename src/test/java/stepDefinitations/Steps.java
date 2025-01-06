@@ -244,13 +244,17 @@ public class Steps extends BaseClass {
 	
 	@When("user search for {string}  in the table using pagination")
 	public void user_search_for_in_the_table_using_pagination(String string) {
-		RicePagi = new RicePagination(driver); 
-	System.out.println(RicePagi.checkTable());
+		throw new io.cucumber.java.PendingException();
 	}
 
 	@Then("user verify the price is {int}")
 	public void user_verify_the_price_is(Integer int1) {
-	    
+		throw new io.cucumber.java.PendingException();
+	}
+	@When("user search for {string} in the table using pagination")
+	public void user_search_for_in_the_table_using_pagination1(String string) {
+		RicePagi = new RicePagination(driver); 
+		System.out.println(RicePagi.checkTable());
 	}
 	
 	// code for the external url from the parent application using handle id
@@ -259,16 +263,18 @@ public class Steps extends BaseClass {
 	@When("user click on Instagram in Title of connect with us in footer")
 	public void user_click_on_instagram_in_title_of_connect_with_us_in_footer() {
 	   //TC updated and steps written below 
+		throw new io.cucumber.java.PendingException();
 	}
 
 	@Then("user can see Instagram url gets launched in same tab")
 	public void user_can_see_instagram_url_gets_launched_in_same_tab() {
 	   //TC updated and steps written below
+		throw new io.cucumber.java.PendingException();
 	}
 
 	@Then("user navigate back to the parent page")
 	public void user_navigate_back_to_the_parent_page() {
-	    
+		throw new io.cucumber.java.PendingException();
 	}
 	
 	@When("user click on Myntra, ClearTrip and Shopsy in Title of connect with us in footer")
