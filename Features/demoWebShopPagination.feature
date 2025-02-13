@@ -1,5 +1,5 @@
 Feature: TC 02 demoWebShop 
-
+//website used here is online shoping
 Background: below are the steps for each scenario
  	Given user Launch Chrome browser
   
